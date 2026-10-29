@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Message board — Forza Horizon 5 fan pages</title>
+  <meta name="description" content="Static message board for Forza Horizon 5 fan pages.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Forza Horizon 5 <span>fan pages</span></a>
+      <nav aria-label="Primary">
+        <a href="index.html">Welcome</a>
+        <a href="specs.html">Tuned specs</a>
+        <a href="desc.html">Stock descriptions</a>
+        <a href="upgrades.html">Upgrades</a>
+        <a href="board.html" aria-current="page">Message board</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1 class="page-title">Message board</h1>
+    <p class="lead">Nicknames and messages are stored as plain text. Times are shown in Hong Kong time (HKT).</p>
+
+    <div class="board-note" role="note">
+      This is a <strong>static</strong> copy of the board. Live posting needs a backend; the form below is display-only and does not submit.
+    </div>
+
+    <article class="message">
+      <div class="message-meta">
+        <strong>52 Autumns</strong>
+        <time datetime="2026-09-22T08:03:00+08:00">22 Sept 2026, 08:03 HKT</time>
+      </div>
+      <p>This is a brand new feature. Messages are welcome.</p>
+    </article>
+
+    <div class="form-static" aria-disabled="true">
+      <h3>Post message</h3>
+      <label for="nick">Nickname</label>
+      <input id="nick" name="nickname" type="text" disabled placeholder="Your nickname" value="">
+      <label for="msg">Message</label>
+      <textarea id="msg" name="message" disabled placeholder="Your message"></textarea>
+      <label for="site">Website</label>
+      <input id="site" name="website" type="url" disabled placeholder="https:// (optional)">
+      <button type="button" class="btn btn-primary" disabled>Post message</button>
+      <p class="form-hint">Live posting is not available on this static site. A server would be required to accept new messages.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Tuned figures are Forza Horizon 5 builds. Stock text is a short summary of the in-game description.</p>
+      <p>Forza fan pages, 2026</p>
+      <div class="footer-links">
+        <a href="index.html">Welcome</a>
+        <a href="board.html">Message board</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
